@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: common
+  version: 1.0.0
+  description: separated file
+components:
+  schemas:
+    UID:
+      description: uid
+      type: string
+      example: qdnhbvefar4t5y6uku46eysgrzfhmdnzfartwyehsnbz
+    ContentTypeDummy:
+      description: Content-Type-DummyではなくContent-Type。明示的に指定できないため、headersには入ってるよって意味で書いてる
+      type: string
+      example: application/json; charset=utf-8
+    AccessControlAllowOriginDummy:
+      description: Access-Control-Allow-Origin-DummyではなくAccess-Control-Allow-Origin。明示的に指定できないため、headersには入ってるよって意味で書いてる
+      type: string
+      example: \*

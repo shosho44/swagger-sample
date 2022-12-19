@@ -1,0 +1,22 @@
+
+openapi: 3.0.0
+info:
+  title: Areas
+  version: 1.0.0
+  description: separated file
+paths:
+components:
+  schemas:
+    AreasResponse:
+      description: インフルエンサーの活動地域
+      type: array
+      items:
+        type: object
+        properties:
+          id: { integer }
+          name: { integer }
+      example:
+        - {'id': 1, 'name': '北海道'}
+        - {'id': 2, 'name': '秋田'}
+        - {'id': 47, 'name': '沖縄'}
+        - {'id': 48, 'name': '全国'}

@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  title: separated file
+  version: 1.0.0
+  description: separated file
+paths:
+  /areas:
+    get:
+      security:
+        - []
+      tags:
+        - areas
+      operationId: getAreas
+      responses:
+        '200':
+          description: '200'
+          headers:
+            $ref: '../../components/headers/status-code_error-message.yaml#/components/schemas/Headers200'
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: object
+                properties:
+                  areas:
+                    $ref: '#/components/schemas/AreasResponse'
+        '409':
+          description: '409'
+          headers:
+            $ref: '../../components/headers/status-code_error-message.yaml#/components/schemas/Headers409'
+        '500':
+          description: '500'
+          headers:
+            $ref: '../../components/headers/status-code_error-message.yaml#/components/schemas/Headers500'
+components:
+  schemas:
+    AreasResponse:
+      $ref: '../../components/not-authorized/areas.yaml#/components/schemas/AreasResponse'

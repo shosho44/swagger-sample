@@ -1,0 +1,85 @@
+openapi: 3.0.0
+info:
+  title: StatusCodeErrorMessage
+  version: 1.0.0
+  description: separated file
+components:
+  schemas:
+    Headers200:
+      Status-Code:
+        description: '200'
+        type: string
+        example: '200'
+      Error-Message:
+        description: '200 error message'
+        type: string
+        example: 'OK'
+      Content-Type-Dummy:
+        $ref: '../../components/headers/common.yaml#/components/schemas/ContentTypeDummy'
+      Access-Control-Allow-Origin-Dummy:
+        $ref: '../../components/headers/common.yaml#/components/schemas/AccessControlAllowOriginDummy'
+    Headers400:
+      Status-Code:
+        description: '400'
+        type: string
+        example: '400'
+      Error-Message:
+        description: '400 error message'
+        type: string
+        example: 'Bad Request'
+      Content-Type-Dummy:
+        $ref: '../../components/headers/common.yaml#/components/schemas/ContentTypeDummy'
+      Access-Control-Allow-Origin-Dummy:
+        $ref: '../../components/headers/common.yaml#/components/schemas/AccessControlAllowOriginDummy'
+    Headers401:
+      Status-Code:
+        description: '401'
+        type: string
+        example: '401'
+      Error-Message:
+        description: '401 error message'
+        type: string
+        example: 'Unauthorized'
+      Content-Type-Dummy:
+        $ref: '../../components/headers/common.yaml#/components/schemas/ContentTypeDummy'
+      Access-Control-Allow-Origin-Dummy:
+        $ref: '../../components/headers/common.yaml#/components/schemas/AccessControlAllowOriginDummy'
+    Headers404:
+      Status-Code:
+        description: '404'
+        type: string
+        example: '404'
+      Error-Message:
+        description: '404 error message'
+        type: string
+        example: 'Not Found'
+      Content-Type-Dummy:
+        $ref: '../../components/headers/common.yaml#/components/schemas/ContentTypeDummy'
+      Access-Control-Allow-Origin-Dummy:
+        $ref: '../../components/headers/common.yaml#/components/schemas/AccessControlAllowOriginDummy'
+    Headers409:
+      Status-Code:
+        description: '409'
+        type: string
+        example: '409'
+      Error-Message:
+        description: '409 error message'
+        type: string
+        example: 'Conflict'
+      Content-Type-Dummy:
+        $ref: '../../components/headers/common.yaml#/components/schemas/ContentTypeDummy'
+      Access-Control-Allow-Origin-Dummy:
+        $ref: '../../components/headers/common.yaml#/components/schemas/AccessControlAllowOriginDummy'
+    Headers500:
+      Status-Code:
+        description: '500'
+        type: string
+        example: '500'
+      Error-Message:
+        description: '500 error message'
+        type: string
+        example: 'Internal Server Error'
+      Content-Type-Dummy:
+        $ref: '../../components/headers/common.yaml#/components/schemas/ContentTypeDummy'
+      Access-Control-Allow-Origin-Dummy:
+        $ref: '../../components/headers/common.yaml#/components/schemas/AccessControlAllowOriginDummy'

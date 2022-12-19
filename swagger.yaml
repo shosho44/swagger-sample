@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  description: sample API
+  version: 1.0.0
+  title: sample API
+  "contact": {
+      "name": "sample-openapi",
+      "url": "https://example.com",
+      "email": "support.contact@example.com"
+    }
+  "license": {
+      "name": "sample-license 4.0 International (CC BY-SA 4.0)",
+      "url": "https://sample.com/"
+    }
+servers:
+  - url: 'http://localhost:8012'
+tags:
+  - name: company/register
+components:
+  securitySchemes:
+    bearerAuth:
+      scheme: bearer
+      type: http
+      bearerFormat: JWT
+
+security:
+  - bearerAuth: []
+
+paths:
+  /api/v1/company/register:
+    $ref: './paths/company/register.yaml#/paths/~1company_register'
+  /api/v1/areas:
+    $ref: './paths/areas.yaml#/paths/~1areas'
